@@ -1,5 +1,7 @@
 # TODO List Angular
 
+![alt text](https://i.pinimg.com/originals/53/40/91/53409141473224f5271c4162f2589498.jpg)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
 ## Development server
