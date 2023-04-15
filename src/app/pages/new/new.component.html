@@ -1,0 +1,19 @@
+<div class="card animate__animated animate__fadeIn animate__faster">
+  <div class="task-container" *ngIf="task">
+    <div class="task-header">
+      <button class="btn btn-return" (click)="returnHome()">
+        <i class='bx bx-arrow-back'></i>
+      </button>
+      <h2>Add a new task</h2>
+    </div>
+    <div class="task-body">
+      <label>Title</label>
+      <input type="text" [(ngModel)]="task.title" placeholder="Title">
+      <label>Description</label>
+      <textarea [(ngModel)]="task.description" rows="7" placeholder="Description"></textarea>
+    </div>
+    <div class="task-actions">
+      <button class="btn btn-secondary" (click)="addTask()"><i class="bx bx-plus"></i> Create task</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+.task-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.task-header{
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.task-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.task-actions{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.task-actions-buttons{
+    display: flex;
+    gap: 0.5em;
+}
+
+textarea{
+    font-family: 'Roboto', sans-serif;
+}

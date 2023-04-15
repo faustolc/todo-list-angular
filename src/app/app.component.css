@@ -1,0 +1,15 @@
+.container{
+    max-width: 720px;
+    width: calc(100% - 1rem);
+    margin: auto;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.app-header{
+    color: white;
+    font-size: 32pt;
+    font-weight: bold;
+    padding: 0.5em;
+}
+

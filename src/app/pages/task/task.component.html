@@ -1,0 +1,27 @@
+<div class="card animate__animated animate__fadeIn animate__faster">
+  <div class="task-container" *ngIf="task">
+    <div class="task-header">
+      <button class="btn btn-return" (click)="returnHome()">
+        <i class='bx bx-arrow-back'></i>
+      </button>
+      <h2>Task details <small ngClass="{{ task.status | taskStatusClass }}">{{task.status | taskStatus}}</small></h2>
+    </div>
+    <div class="task-body">
+      <label>Title</label>
+      <input type="text" [(ngModel)]="task.title" placeholder="Title">
+      <label>Description</label>
+      <textarea [(ngModel)]="task.description" rows="7"></textarea>
+    </div>
+    <div class="task-actions">
+      <div>
+        <small class="text-color-muted" [ngClass]="{'animate__animated animate__fadeIn': msg}">{{msg}}</small>
+      </div>
+      <div class="task-actions-buttons">
+        <button class="btn btn-primary" (click)="update()">
+          <i class='bx bx-save'></i>
+          Update
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

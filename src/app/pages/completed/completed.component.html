@@ -1,0 +1,12 @@
+<div class="card  animate__animated animate__fadeIn animate__faster">
+  <div class="card-header">
+    <button class="btn btn-return" (click)="returnHome()">
+      <i class='bx bx-arrow-back'></i>
+    </button>
+    <h2>Completed tasks</h2>
+  </div>
+  <div class="list">
+    <app-task-item *ngFor="let task of tasks" [data]="task" (updated)="updateTasks()">
+    </app-task-item>
+  </div>
+</div>

@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    --app-base-color-light: #3498db;
+    --app-base-color: #2980b9;
+
+    --app-complement-color-light: #1abc9c;
+    --app-complement-color: #16a085;
+
+    --app-color-red-light: #e74c3c;
+    --app-color-red: #c0392b;
+    --app-color-green-light: #1abc9c;
+    --app-color-green: #16a085;
+
+    --app-muted-text: gray;
+    --app-base-text: white;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    
+}
+
+.card{
+    padding: 2em;
+    
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+}
+
+.btn{
+    padding: 10px;
+    color: var(--app-base-text);
+    border-radius: 8px;
+    border-width: 0px;
+}    
+
+.btn-primary{
+    background-color: var(--app-base-color);
+}
+.btn-primary:hover{
+    background-color: var(--app-base-color-light);
+}
+.btn-secondary{
+    background-color: var(--app-complement-color);
+}
+.btn-secondary:hover{
+    background-color: var(--app-complement-color-light);
+}
+.btn-cancel{
+    background-color: var(--app-color-red);
+}
+.btn-cancel:hover{
+    background-color: var(--app-color-red-light);
+}
+.btn-return{
+    font-size: 1.5em;
+    background-color: transparent;
+    color: var(--app-muted-text);
+}
+.btn-return:hover{
+    background-color: #e0e0e0;
+    color: #151515;
+}
+
+textarea,
+input{
+    padding: 0.8em;
+    border-radius: 8px;
+    resize: none;
+}
+
+
+.text-color-primary{
+    color: var(--app-base-color);
+}
+.text-color-success{
+    color: var(--app-color-green);
+}
+.text-color-danger{
+    color: var(--app-color-red);
+}
+.text-color-muted{
+    color: var(--app-muted-text);
+}

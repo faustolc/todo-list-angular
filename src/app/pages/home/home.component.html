@@ -1,0 +1,19 @@
+<div class="card animate__animated animate__fadeIn animate__faster">
+  <div class="actions">
+    <button class="btn btn-secondary" (click)="navigateCompleted()">
+      <i class='bx bx-check'></i>
+      See completed tasks
+    </button>
+    <button class="btn btn-primary" (click)="addTask()">
+      <i class='bx bx-plus'></i>
+      Add a new task
+    </button>
+  </div>
+  <div class="search">
+    <input type="text" placeholder="Search..." [(ngModel)]="query" id="input-search">
+  </div>
+  <div class="list">
+    <app-task-item *ngFor="let task of taskList | filterTask: query" [data]="task" (updated)="updateTasks()">
+    </app-task-item>
+  </div>
+</div>

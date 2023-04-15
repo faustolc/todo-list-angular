@@ -1,0 +1,95 @@
+.task{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.task:hover{
+    background-color: #e0e0e0;
+}
+
+.task:hover .task-actions{
+    opacity: 1;
+}
+
+.task-data{
+    width: 100%;
+}    
+
+.task-data .task-title{
+    font-weight: bold;
+}    
+
+.task-data .task-footer{
+    color: var(--app-muted-text);
+    font-style: italic;
+}    
+
+.task-actions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+}    
+
+.btn-check{
+    background-color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: gray;
+    color: white;
+    font-size: 24pt;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+}
+
+.btn-check:hover{
+    background-color: var(--app-complement-color-light);
+    color: white;
+    border-color: transparent;
+}
+
+.btn-check-active{
+    background-color: var(--app-complement-color-light);
+    color: white;
+    border-color: transparent;
+    
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+    
+    font-size: 24pt;
+    text-align: center;
+    
+    width: 48px;
+    height: 48px;
+    
+}
+
+.btn-check-active:hover{
+    background-color: white;
+    color: white;
+    border-color: gray;
+}
+
+.btn-drop-task{
+    background-color: var(--app-color-red);
+    border-radius: 50%;
+    border-width: 0;
+    color: white;
+    font-size: 18pt;
+    width: 48px;
+    height: 48px;
+}
+
+.btn-drop-task:hover{
+    background-color: var(--app-color-red-light);
+    color: white;
+    border-color: transparent;
+}
+

@@ -1,0 +1,19 @@
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.search{
+    padding: 1em 0;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+#input-search{
+    box-sizing: border-box;
+    width: 100%;
+}
